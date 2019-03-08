@@ -1,0 +1,224 @@
+@font-face {
+    font-family: tradesmith;
+    src: url('./fonts/TradesmithRegular.otf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'tradesmith', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right bottom, rgba(69, 58, 107, 0.7), rgb(14, 5, 41, 0.7) 90%);
+    height: 100vh;
+    width: 100vw;
+}
+
+#grid-lay{
+    display: grid;
+    grid-template-rows: 2fr 1fr 6fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 6% 2%; 
+    text-align: center;
+    grid-template-areas: 
+        "name img1 img2 img3"
+        "rank tier kda blood"
+        "charts charts charts charts";
+    background-color: black;   
+    position: relative;
+    padding: 20px 0px 10px 0px;
+    color: #1f9e34;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    width: 830px;
+    height: 510px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right bottom, rgb(69, 58, 107), rgb(14, 5, 41) 90%);
+    /* box-shadow: 5px 6px 12px 5px rgba(0,0,0,0.66); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.charts{
+    grid-area: charts;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+#image-1{
+    grid-area: img1;
+}
+
+#image-2{
+    grid-area: img2;
+}
+
+#image-3{
+    grid-area: img3;
+}
+
+.name{
+    grid-area: name;
+}
+
+.tier{
+    grid-area: tier;
+}
+
+.rank{
+    grid-area: rank;
+}
+
+.kda{
+    grid-area: kda;
+}
+
+.first-blood{
+    grid-area: blood;
+}
+
+.name{
+    position: relative;
+}
+.name .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.text, .text-h{
+    color: white;
+    font-weight: 500;
+}
+
+.gold{
+    background: -webkit-linear-gradient(45deg, rgb(144, 125, 16), rgb(83, 72, 6));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.silver{
+     background: -webkit-linear-gradient(45deg, rgb(129, 129, 127), rgb(51, 51, 51));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.name .text{
+    font-size: 2rem;
+}
+
+/* mobile 360x640 */
+div[class^="container-"] {
+    height: 100%;
+    width: 100%;
+    padding: 1%;
+}
+
+div.container-lanes{
+    height: 100%;
+    width: 100%;
+}
+
+img{
+    border-radius: 50%;
+    transition: all 1s;
+}
+  
+img:hover{
+    transform: scale(1.3);
+}
+
+#test{
+    width: 40%;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, rgb(69, 58, 107), rgb(14, 5, 41) 90%);
+    border: none;
+    border-radius: 10px;
+    font-family: 'tradesmith', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    padding: 0% 2%;
+    cursor: pointer;
+}
+
+.search-div{
+    min-width: 300px;
+    width: 60%;
+    height: 30px!important;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#search-name{
+    width: 40%;
+    height: 100%;
+    font-family: 'tradesmith', sans-serif;
+    background-color: rgba(59, 59, 59, 0.2);
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 0 2%;
+    margin-right: 10px;
+}
+
+@media (max-width: 630px) {
+    #grid-lay{
+        display: grid;
+        grid-template-rows: repeat(8, 1fr) 12fr;
+        grid-template-columns: 1fr;
+        grid-gap: 2% 2%; 
+        text-align: center;
+        grid-template-areas: 
+            "name"
+            "img1"
+            "img2"
+            "img3"
+            "rank"
+            "tier"
+            "kda"
+            "blood"
+            "charts";
+        background-color: black;   
+        position: relative;
+        padding-top: 30px;
+    }
+    .charts{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main-container{
+        width: 300px;
+        height: 1800px;
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+        margin-top: 20px;
+    }
+    .wrapper{
+        margin-top: 60px;
+        height: 1850px;
+    }
+    .search-div{
+        display: block;
+    }
+    #win-rate, #lanes, #win-rate-solo{
+        max-width: none!important;
+    }
+    
+}
+
+#win-rate, #lanes, #win-rate-solo{
+    max-width: 261px; 
+}

@@ -1,0 +1,58 @@
+https://la1.api.riotgames.com/lol/summoner/v4/summoners/by-name/Arcayus?api_key=RGAPI-039d7091-606b-475c-8fa0-35846aec7014
+
+  "id": "_VSBCcw-UMhMUAhMqHR0IKiTTJc92vQP5MQ3NGJDTrv7"
+  "accountId": "RQVXNgi8UivNZtIM5silFpMTtL9zsQeHmVLou4X4atFfz-w"
+
+
+https://la1.api.riotgames.com/lol/league/v4/positions/by-summoner/_VSBCcw-UMhMUAhMqHR0IKiTTJc92vQP5MQ3NGJDTrv7?api_key=RGAPI-039d7091-606b-475c-8fa0-35846aec7014
+
+[]
+"tier": "GOLD"
+"rank": "IV"
+"queueType": "RANKED_SOLO_5x5"
+
+
+season 9 = 1548384351159
+           
+
+https://la1.api.riotgames.com/lol/match/v4/matchlists/by-account/RQVXNgi8UivNZtIM5silFpMTtL9zsQeHmVLou4X4atFfz-w?beginTime=1548384351159&endIndex=400&beginIndex=300&api_key=RGAPI-039d7091-606b-475c-8fa0-35846aec7014
+
+.matches
+[]
+"lane": "MID",
+"gameId": 656636758,
+"champion": 238,      
+"timestamp": 1548385368455,
+"role": "SOLO",
+        
+
+https://la1.api.riotgames.com/lol/match/v4/matches/656636758?api_key=RGAPI-039d7091-606b-475c-8fa0-35846aec7014
+
+."participantIdentities"
+[]
+"participantId": 1
+player.
+summonerName": "Arcayus",
+"summonerId": "_VSBCcw-UMhMUAhMqHR0IKiTTJc92vQP5MQ3NGJDTrv7",
+"accountId": "imOqjAju_l47nvrbIVHm7ylXBIQeXu6vf15u7MSDycS9m9Y"
+
+.teams
+[0]
+"win": "Win",
+"teamId": 100,
+
+[1]
+"win": "Fail",
+"teamId": 200,
+
+.participantIdentities
+[]
+.stats
+"participantId": 1,
+ "win": true,
+ "kills": 4,
+ "deaths": 6,
+ "wardsPlaced": 9,
+ "firstBloodKill": true,
+ "totalDamageDealt": 120289,
+ "championId": 238

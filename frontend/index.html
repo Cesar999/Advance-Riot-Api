@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+    <div class="search-div">
+        <input type="text" id="search-name" placeholder="summoner name">
+        <button id="test">Search</button>
+    </div>
+
+    <div id="grid-lay" class="main-container">
+
+        <div id="image-1" class="center-parent">
+            <img id="img1" class="center-child">
+        </div>
+        <div id="image-2" class="center-parent">
+            <img id="img2" class="center-child">
+        </div>
+        <div id="image-3" class="center-parent">
+            <img id="img3" class="center-child">
+        </div>
+
+        <div class="name center-parent">
+            <div class="text center-child"></div>
+        </div> 
+        <div class="tier center-parent">
+            <div class="text-h"></div>
+            <div class="text center-child"></div>
+        </div>
+        <div class="rank center-parent">
+            <div class="text-h"></div>
+            <div class="text center-child"></div>
+        </div>
+        <div class="kda center-parent">
+            <div class="text-h"></div>
+            <div class="text center-child"></div>
+        </div>
+        <div class="first-blood center-parent">
+            <div class="text-h"></div>
+            <div class="text center-child"></div>
+        </div>
+
+        <div class="charts">
+            <div class="container-winrate">
+                <canvas id="win-rate" width="200" height="200"></canvas>
+            </div>
+            
+            <div class="container-lanes">
+                <canvas id="lanes" width="200" height="200"></canvas>
+            </div>
+            
+            <div class="container-solo">
+                <canvas id="win-rate-solo" width="200" height="200"></canvas>
+            </div>            
+        </div>
+    </div>
+    
+    </div> <!-- end wrapper -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+<script src="chart-winrate.js"></script>
+<script src="chart-lanes.js"></script>
+<script src="chart-solo.js"></script>
+<script src="images.js"></script>
+<script src="main.js"></script>
+</html>
