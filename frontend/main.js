@@ -14,7 +14,8 @@ name.addEventListener("keyup", function(event) {
 });
 
 function fetchData(){
-    const base_url = 'http://localhost:3000';
+    const base_url = 'https://secret-springs-92887.herokuapp.com';
+    //const base_url = 'http://localhost:3000';
         fetch(base_url+'/getData',{ 
             method: "POST",
             headers: {
