@@ -24,7 +24,7 @@ app.listen(port,()=>{
     console.log(`Riot Service on port ${port}`);
 });
 
-const key = `?api_key=RGAPI-8ad54a15-e23c-4398-b455-7b6e5688e952`;
+const key = `?api_key=RGAPI-500838ca-7a40-45ac-890a-0742ff166da7`;
 const riot_url = `https://la1.api.riotgames.com`;
 const account_url = `/lol/summoner/v4/summoners/by-name/`; 
 const ranked_url = `/lol/league/v4/positions/by-summoner/`;
